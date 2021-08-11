@@ -25,7 +25,7 @@
 # All UIDs must be unique within a repo. Use `cmd/ctrl+option/alt+u` to generate
 Standards:
   - Title: nelnet MPP Pre-Assessment
-    UID: 32697721-5f71-4821-9c59-a24d101d5c8c
+    UID: E3E78BDF-CB11-45F8-93A0-77FB84E04E91
     Description: Answer all the included questions to help us better understand the knowledge and skills you'll bring into the class on day 1.
     SuccessCriteria:
       - Score 3 points
