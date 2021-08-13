@@ -5,769 +5,11 @@ Welcome to the nelnet post-assessment.  Here are a few things you should know be
   - You have 1 hour to complete this assessment. 
     - This means you should spend ~1 minute per question.
     - Your instructor will notify you when your hour is up.  At that time, please stop your work and submit the assessment.
+  - This is *not* a gating assessment.  Your graduation from this class is not contingent on achieving any particular score on this assessment.
 
 Thank you for taking the time to complete this assessment!
 
-## SECTION 1: TypeScript
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-
-* type: multiple-choice
-* id: 003a99f8-d2f3-49c7-8e16-c73156b6cf6f
-* title: Primitive data types
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-Which of the following is NOT a primitive data-type in JavaScript / TypeScript?
-##### !end-question
-##### !options
-
-* `string`
-* `number`
-* `boolean`
-* `Date`
-* `undefined`
-* `null`
-* `symbol`
-
-##### !end-options
-##### !answer
-`Date`
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-
-* type: multiple-choice
-* id: 0bee0975-dafb-4fb2-bb94-ab22aff9d6f7
-* title: Identifiers
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-Which of the following is a valid TypeScript identifier?
-##### !end-question
-##### !options
-* `switch`
-* `$top-of-page`
-* `dropdownAnimation`
-* `1orMoreMenuItems`
-##### !end-options
-##### !answer
-`dropdownAnimation`
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-
-* type: multiple-choice
-* id: 1d3cf623-104c-494e-bf0f-1ccbfe7969cf
-* title: Variable Assignment
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-What will this TypeScript code log to the console, when it is run? 
-
-```TypeScript
-let firstVar: number = 15;
-let secondVar: number = firstVar;
-firstVar = 16;
-console.log(secondVar);
-```
-##### !end-question
-##### !options
-* 15
-* “secondVar”
-* 16
-* Error:  Identifier referenced before assignment
-* undefined
-##### !end-options
-##### !answer
-15
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-
-* type: multiple-choice
-* id: ee68702e-b539-40e9-a65a-d0b330837997
-* title: Type Definitions
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-Which of the following is **not** a valid type definition?
-##### !end-question
-##### !options
-* `const a: Array<number>;`
-* `const b: number[];`
-* `const d: []number;`
-* `const e: [number];`
-##### !end-options
-##### !answer
-`const d: []number;`
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-
-* type: multiple-choice
-* id: e3cdcfeb-e126-46e0-95ee-5e405f103379
-* title: If statements
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-What will the following code write to the console?
-
-```typescript
-let firstVar: number = 15;
-let secondVar: string = “hello”;
-if(secondVar === “hello world”) {
-  console.log(secondVar);
-} else if (firstVar > 10) {
-  console.log(firstVar);
-} else {
-  console.log(”goodbye”);
-}
-```
-##### !end-question
-##### !options
-* undefined
-* 15
-* Error: Operator '>' cannot be applied to types 'string' and 'number'.
-* “hello world”
-* “goodbye”
-##### !end-options
-##### !answer
-15
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-
-* type: multiple-choice
-* id: 1cfc5464-fbc7-4613-aa5c-ba88b1fbac72
-* title: For loops
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-What will the following code write to the console? 
-
-```typescript
-let myNum: number = 0;
-
-for(let i:number = 36; i > 0; i = i - 3) {
-  myNum = myNum + 1;
-}
-
-console.log("i is " + myNum);
-```
-##### !end-question
-##### !options
-* "i is 36"
-* "i is 24" 
-* "i is 12"
-* "i is 6"
-* "i is 3"
-##### !end-options
-##### !answer
-"i is 12"
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-
-* type: multiple-choice
-* id: 5b00718c-28a4-4cb8-8939-e3e26ea561f1
-* title: For...in loops
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-What will the following code write to the console? 
-```typescript
-const myObj: any = {
-  firstname: "Ian",
-  lastname: "Culleton",
-  github: "ian-culleton",
-  email: "ian.culleton@galvanize.com"
-}
-
-const myArray: string[] = [];
-for(let key in myObj) {
-  myArray.push(key);
-}
-
-console.log(myArray);
-```
-##### !end-question
-##### !options
-* [0, 1, 2, 3] 
-* ["firstname", "lastname", "github", "email"] 
-* ["Ian", "Culleton", "ian-culleton", "ian.culleton@galvanize.com"] 
-* []
-* Error: Assignment to constant variable. 
-##### !end-options
-##### !answer
-["firstname", "lastname", "github", "email"] 
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-
-* type: checkbox
-* id: 403343b0-5f05-4978-a60c-f6b56d77eceb
-* title: Arithmetic operators
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-Which of the following are _arithmetic_ operators in TypeScript? (Select all that apply)
-##### !end-question
-##### !options
-* `+`
-* `=`
-* `*`
-* `===`
-* `/`
-* `//`
-* `&&`
-* `%`
-* `!`
-##### !end-options
-##### !answer
-* `+`
-* `*`
-* `/`
-* `%`
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-
-* type: checkbox
-* id: 6e9b4aa3-f3db-4e64-a686-3edc54a206ab
-* title: Logical operators
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-Which of the following are _logical_ operators in TypeScript? (Select all that apply)
-##### !end-question
-
-##### !options
-* `+`
-* `=`
-* `*`
-* `===`
-* `/`
-* `//`
-* `&&`
-* `%`
-* `!`
-##### !end-options
-##### !answer
-* `&&`
-* `!`
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-
-* type: checkbox
-* id: fa62f16f-969b-4be5-8cef-e855ecdb175c
-* title: Comparison operators
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-Which of the following are _comparison_ operators in TypeScript? (Select all that apply) 
-##### !end-question
-##### !options
-* `+`
-* `=`
-* `*`
-* `===`
-* `/`
-* `//`
-* `&&`
-* `%`
-* `!`
-##### !end-options
-##### !answer
- `===`
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-* type: multiple-choice
-* id: 5e918c07-91e2-4187-b5d7-e2bbd9da4115
-* title: Math
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-##### !question
-What will the following code write to the console?
-```typescript
-const foo = (22 + 4 * 2 - 2) / 4;
-console.log(foo)
-```
-##### !end-question
-##### !options
-* 0
-* 12.5
-* 7 
-* 11
-* 13
-##### !end-options
-##### !answer
-7
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-
-* type: multiple-choice
-* id: 0a6bb3fd-d219-4cf8-b2cc-228ee497f17f
-* title: Logical operators
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-Which of the following expressions evaluates to true?
-##### !end-question
-##### !options
-*  true && false === false || true
-* 13 > 16 || 18 <= 13
-* “foo” !== “bar” && “baz” === “bam”
-* 3 + 4 + 2 * 5 >= 16 / 2 + 27 / 3 * (3 + 8 - 10)
-##### !end-options
-##### !answer
-3 + 4 + 2 * 5 >= 16 / 2 + 27 / 3 * (3 + 8 - 10)
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-
-* type: multiple-choice
-* id: aa6a7612-1f40-46e6-8274-fcf09e98241e
-* title: Logical operators
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-Which of the following expressions evaluates to false? 
-##### !end-question
-##### !options
-* "typescript".charAt(4) === "strings".charAt(6)
-* "typescript".includes("JavaScript".substr(4, 9).toLowerCase())
-* typeof “typescript”.charCodeAt(3) === “string”
-* "type".concat('script').length === 10
-##### !end-options
-##### !answer
-typeof “typescript”.charCodeAt(3) === “string”
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-
-* type: multiple-choice
-* id: e77ebe7f-bc47-4080-82b1-90da7fda848c
-* title: Destructuring
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-What will the following code write to the console? 
-```typescript
-const myObj: any = {
-  myKey: 42,
-  mySecondKey: 'forty-two'
-}
-const { mySecondKey } = myObj;
-console.log(mySecondKey);
-```
-##### !end-question
-##### !options
-* {myKey: 42, mySecondKey: 'forty-two'}
-* ‘forty-two’
-* 42
-* undefined
-##### !end-options
-##### !answer
-‘forty-two’
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-## SECTION 2: Angular
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-
-* type: multiple-choice
-* id: cc553cdf-3eb8-469d-b7d0-6c813c3d146c
-* title: Modules
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-Which of the following is used to declare components that belong to a module within `@NgModule`?
-##### !end-question
-##### !options
-* `declarations`
-* `imports`
-* `bootstrap`
-##### !end-options
-##### !answer
-`declarations`
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-
-* type: checkbox
-* id: 17d8a869-69e4-49cd-9804-3d9f57d3322b
-* title: Data Binding
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-Below are some statements about data binding. Check all that are **true**
-##### !end-question
-
-##### !options
-* Event binding allows components to respond to user actions.
-* Property binding allows components to respond to user actions.
-* Event binding is achieved using `[ ]` syntax in a template.
-* Event binding is achieved using the `@Output` decorator in component class definitions.
-* property binding is achieved using `[ ]` syntax in a template.
-* Property binding is achieved using the `@Input` decorator in component class definitions.
-* All of the above.
-##### !end-options
-
-##### !answer
-* Event binding allows components to respond to user actions.
-* Event binding is achieved using the `@Output` decorator in component class definitions.
-* property binding is achieved using `[ ]` syntax in a template.
-* Property binding is achieved using the `@Input` decorator in component class definitions.
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-
-* type: multiple-choice
-* id: 816fcca2-bed1-4156-b5d7-75333bec8726
-* title: Data binding
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-Consider the template code below: 
-```
-<app-profile
-  [name]="'Alton Brown'"
-  [email]="alton@foodnetwork.com"
-  (profileSelected)="handleProfileClick($event)"
-></app-profile>
-```
-
-which line above contains event binding?
-##### !end-question
-
-##### !options
-* `<app-profile`
-* ` [name]="'Alton Brown'"`
-* ` [email]="'alton@foodnetwork.com'"`
-* ` (profileSelected)="handleProfileClick($event)"`
-##### !end-options
-
-##### !answer
-` (profileSelected)="handleProfileClick($event)"`
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-
-* type: checkbox
-* id: c0fd35ff-bcce-4be4-b709-79cd5d89e1c4
-* title: Types of directives
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-What are the three types of Angular directive? (Select all that apply)
-##### !end-question
-
-##### !options
-* circular
-* structural
-* attribute
-* prime
-* component
-* display
-* implicit
-##### !end-options
-
-##### !answer
-* structural
-* attribute
-* component
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-
-* type: multiple-choice
-* id: c7cef33a-b38e-46f6-a3b3-1cd9b4c3e284
-* title: Structural directives
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-What are structural directives used for?
-##### !end-question
-##### !options
-* They control the appearance and behavior of a region of the screen.
-* They are used to create, arrange, or remove DOM elements.
-* They change the appearance or behavior of DOM elements
-##### !end-options
-##### !answer
-They are used to create, arrange, or remove DOM elements.
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-
-* type: multiple-choice
-* id: f6c2ff8b-dcb4-4c15-a44f-488ff43b6c9d
-* title: Attribute directives
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-What are attribute directives used for?
-##### !end-question
-##### !options
-* They control the appearance and behavior of a region of the screen.
-* They are used to create, arrange, or remove DOM elements.
-* They change the appearance or behavior of DOM elements
-##### !end-options
-##### !answer
-They change the appearance or behavior of DOM elements
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-
-* type: multiple-choice
-* id: 826d543f-d5a1-4da8-b348-e6e4dfc75348
-* title: Dependency Injection
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-Which of the following is **NOT** true of Angular's dependency injection system?
-##### !end-question
-##### !options
-* Dependencies are registered with Angular using the `Injectable` decorator.
-* Each component instantiates a new instance of the injected service.
-* Dependencies are injected into components using a parameter in the component constructor.
-##### !end-options
-##### !answer
-Each component instantiates a new instance of the injected service.
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-
-* type: multiple-choice
-* id: 8afe2819-55d4-40e5-a398-d1b1e9f1817f
-* title: Forms
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-Which of the following best describes the relationship between a `FormControl` and a `FormGroup`?
-##### !end-question
-##### !options
-* A `FormControl` controls the validation of a `FormGroup`.
-* A `FormControl` contains all of the `FormGroup` instances for a single form.
-* A `FormGroup` contains all of the `FormControl` instances for a single form.
-* A `FormGroup` returns a new `FormControl` every time the value of an input changes.
-##### !end-options
-##### !answer
-A `FormGroup` contains all of the `FormControl` instances for a single form.
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-
-* type: multiple-choice
-* id: 513312c6-73ab-4f7c-bfac-3e555a2a123f
-* title: FormGroup
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-Which of the following directives is used to bind an input in the template to a specific field in a `FormGroup`?
-##### !end-question
-##### !options
-* `formGroup`
-* `formControl`
-* `formControlName`
-* `ngFormField`
-##### !end-options
-##### !answer
-`formControlName`
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-<!--BEGIN CHALLENGE-->
-
-### !challenge
-
-* type: multiple-choice
-* id: fb953206-0e5a-41f5-aba0-3f7a4885d30d
-* title: Routing
-<!--Other optional fields (checkpoints only) -->
-<!--`points: 1`: the number of points for scoring as a checkpoint-->
-<!--`topics: python, pandas`: the topics for analyzing points-->
-
-##### !question
-Which built-in directive is used to specify the location in a template the router should render its content?
-##### !end-question
-##### !options
-* `NgModule`
-* `routerLink`
-* `router-outlet`
-* `NgRouter`
-* `AppRoutingComponent`
-##### !end-options
-##### !answer
-`router-outlet`
-##### !end-answer
-### !end-challenge
-
-<!--END CHALLENGE-->
-
-## SECTION 3: C#  8.0
+## SECTION 1: C#
 
 <!--BEGIN CHALLENGE-->
 
@@ -1249,8 +491,7 @@ False
 
 <!--END CHALLENGE-->
 
-
-## SECTION 4: .NET
+## SECTION 2: .NET
 <!-- HERE FOLLOWS THE .NET PORTION OF THE ASSESSMENT -->
 
 <!--BEGIN CHALLENGE-->
@@ -1658,6 +899,766 @@ The JsonSerializer class must be imported from the Newtonsoft JSON package libra
 ##### !end-options
 ##### !answer
 False
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+  
+  
+## SECTION 3: Angular
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: multiple-choice
+* id: cc553cdf-3eb8-469d-b7d0-6c813c3d146c
+* title: Modules
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+Which of the following is used to declare components that belong to a module within `@NgModule`?
+##### !end-question
+##### !options
+* `declarations`
+* `imports`
+* `bootstrap`
+##### !end-options
+##### !answer
+`declarations`
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: checkbox
+* id: 17d8a869-69e4-49cd-9804-3d9f57d3322b
+* title: Data Binding
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+Below are some statements about data binding. Check all that are **true**
+##### !end-question
+
+##### !options
+* Event binding allows components to respond to user actions.
+* Property binding allows components to respond to user actions.
+* Event binding is achieved using `[ ]` syntax in a template.
+* Event binding is achieved using the `@Output` decorator in component class definitions.
+* property binding is achieved using `[ ]` syntax in a template.
+* Property binding is achieved using the `@Input` decorator in component class definitions.
+* All of the above.
+##### !end-options
+
+##### !answer
+* Event binding allows components to respond to user actions.
+* Event binding is achieved using the `@Output` decorator in component class definitions.
+* property binding is achieved using `[ ]` syntax in a template.
+* Property binding is achieved using the `@Input` decorator in component class definitions.
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: multiple-choice
+* id: 816fcca2-bed1-4156-b5d7-75333bec8726
+* title: Data binding
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+Consider the template code below: 
+```
+<app-profile
+  [name]="'Alton Brown'"
+  [email]="alton@foodnetwork.com"
+  (profileSelected)="handleProfileClick($event)"
+></app-profile>
+```
+
+which line above contains event binding?
+##### !end-question
+
+##### !options
+* `<app-profile`
+* ` [name]="'Alton Brown'"`
+* ` [email]="'alton@foodnetwork.com'"`
+* ` (profileSelected)="handleProfileClick($event)"`
+##### !end-options
+
+##### !answer
+` (profileSelected)="handleProfileClick($event)"`
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: checkbox
+* id: c0fd35ff-bcce-4be4-b709-79cd5d89e1c4
+* title: Types of directives
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+What are the three types of Angular directive? (Select all that apply)
+##### !end-question
+
+##### !options
+* circular
+* structural
+* attribute
+* prime
+* component
+* display
+* implicit
+##### !end-options
+
+##### !answer
+* structural
+* attribute
+* component
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: multiple-choice
+* id: c7cef33a-b38e-46f6-a3b3-1cd9b4c3e284
+* title: Structural directives
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+What are structural directives used for?
+##### !end-question
+##### !options
+* They control the appearance and behavior of a region of the screen.
+* They are used to create, arrange, or remove DOM elements.
+* They change the appearance or behavior of DOM elements
+##### !end-options
+##### !answer
+They are used to create, arrange, or remove DOM elements.
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: multiple-choice
+* id: f6c2ff8b-dcb4-4c15-a44f-488ff43b6c9d
+* title: Attribute directives
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+What are attribute directives used for?
+##### !end-question
+##### !options
+* They control the appearance and behavior of a region of the screen.
+* They are used to create, arrange, or remove DOM elements.
+* They change the appearance or behavior of DOM elements
+##### !end-options
+##### !answer
+They change the appearance or behavior of DOM elements
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: multiple-choice
+* id: 826d543f-d5a1-4da8-b348-e6e4dfc75348
+* title: Dependency Injection
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+Which of the following is **NOT** true of Angular's dependency injection system?
+##### !end-question
+##### !options
+* Dependencies are registered with Angular using the `Injectable` decorator.
+* Each component instantiates a new instance of the injected service.
+* Dependencies are injected into components using a parameter in the component constructor.
+##### !end-options
+##### !answer
+Each component instantiates a new instance of the injected service.
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: multiple-choice
+* id: 8afe2819-55d4-40e5-a398-d1b1e9f1817f
+* title: Forms
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+Which of the following best describes the relationship between a `FormControl` and a `FormGroup`?
+##### !end-question
+##### !options
+* A `FormControl` controls the validation of a `FormGroup`.
+* A `FormControl` contains all of the `FormGroup` instances for a single form.
+* A `FormGroup` contains all of the `FormControl` instances for a single form.
+* A `FormGroup` returns a new `FormControl` every time the value of an input changes.
+##### !end-options
+##### !answer
+A `FormGroup` contains all of the `FormControl` instances for a single form.
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: multiple-choice
+* id: 513312c6-73ab-4f7c-bfac-3e555a2a123f
+* title: FormGroup
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+Which of the following directives is used to bind an input in the template to a specific field in a `FormGroup`?
+##### !end-question
+##### !options
+* `formGroup`
+* `formControl`
+* `formControlName`
+* `ngFormField`
+##### !end-options
+##### !answer
+`formControlName`
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: multiple-choice
+* id: fb953206-0e5a-41f5-aba0-3f7a4885d30d
+* title: Routing
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+Which built-in directive is used to specify the location in a template the router should render its content?
+##### !end-question
+##### !options
+* `NgModule`
+* `routerLink`
+* `router-outlet`
+* `NgRouter`
+* `AppRoutingComponent`
+##### !end-options
+##### !answer
+`router-outlet`
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+## SECTION 4: TypeScript
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: multiple-choice
+* id: 003a99f8-d2f3-49c7-8e16-c73156b6cf6f
+* title: Primitive data types
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+Which of the following is NOT a primitive data-type in JavaScript / TypeScript?
+##### !end-question
+##### !options
+
+* `string`
+* `number`
+* `boolean`
+* `Date`
+* `undefined`
+* `null`
+* `symbol`
+
+##### !end-options
+##### !answer
+`Date`
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: multiple-choice
+* id: 0bee0975-dafb-4fb2-bb94-ab22aff9d6f7
+* title: Identifiers
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+Which of the following is a valid TypeScript identifier?
+##### !end-question
+##### !options
+* `switch`
+* `$top-of-page`
+* `dropdownAnimation`
+* `1orMoreMenuItems`
+##### !end-options
+##### !answer
+`dropdownAnimation`
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: multiple-choice
+* id: 1d3cf623-104c-494e-bf0f-1ccbfe7969cf
+* title: Variable Assignment
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+What will this TypeScript code log to the console, when it is run? 
+
+```TypeScript
+let firstVar: number = 15;
+let secondVar: number = firstVar;
+firstVar = 16;
+console.log(secondVar);
+```
+##### !end-question
+##### !options
+* 15
+* “secondVar”
+* 16
+* Error:  Identifier referenced before assignment
+* undefined
+##### !end-options
+##### !answer
+15
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: multiple-choice
+* id: ee68702e-b539-40e9-a65a-d0b330837997
+* title: Type Definitions
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+Which of the following is **not** a valid type definition?
+##### !end-question
+##### !options
+* `const a: Array<number>;`
+* `const b: number[];`
+* `const d: []number;`
+* `const e: [number];`
+##### !end-options
+##### !answer
+`const d: []number;`
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: multiple-choice
+* id: e3cdcfeb-e126-46e0-95ee-5e405f103379
+* title: If statements
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+What will the following code write to the console?
+
+```typescript
+let firstVar: number = 15;
+let secondVar: string = “hello”;
+if(secondVar === “hello world”) {
+  console.log(secondVar);
+} else if (firstVar > 10) {
+  console.log(firstVar);
+} else {
+  console.log(”goodbye”);
+}
+```
+##### !end-question
+##### !options
+* undefined
+* 15
+* Error: Operator '>' cannot be applied to types 'string' and 'number'.
+* “hello world”
+* “goodbye”
+##### !end-options
+##### !answer
+15
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: multiple-choice
+* id: 1cfc5464-fbc7-4613-aa5c-ba88b1fbac72
+* title: For loops
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+What will the following code write to the console? 
+
+```typescript
+let myNum: number = 0;
+
+for(let i:number = 36; i > 0; i = i - 3) {
+  myNum = myNum + 1;
+}
+
+console.log("i is " + myNum);
+```
+##### !end-question
+##### !options
+* "i is 36"
+* "i is 24" 
+* "i is 12"
+* "i is 6"
+* "i is 3"
+##### !end-options
+##### !answer
+"i is 12"
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: multiple-choice
+* id: 5b00718c-28a4-4cb8-8939-e3e26ea561f1
+* title: For...in loops
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+What will the following code write to the console? 
+```typescript
+const myObj: any = {
+  firstname: "Ian",
+  lastname: "Culleton",
+  github: "ian-culleton",
+  email: "ian.culleton@galvanize.com"
+}
+
+const myArray: string[] = [];
+for(let key in myObj) {
+  myArray.push(key);
+}
+
+console.log(myArray);
+```
+##### !end-question
+##### !options
+* [0, 1, 2, 3] 
+* ["firstname", "lastname", "github", "email"] 
+* ["Ian", "Culleton", "ian-culleton", "ian.culleton@galvanize.com"] 
+* []
+* Error: Assignment to constant variable. 
+##### !end-options
+##### !answer
+["firstname", "lastname", "github", "email"] 
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: checkbox
+* id: 403343b0-5f05-4978-a60c-f6b56d77eceb
+* title: Arithmetic operators
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+Which of the following are _arithmetic_ operators in TypeScript? (Select all that apply)
+##### !end-question
+##### !options
+* `+`
+* `=`
+* `*`
+* `===`
+* `/`
+* `//`
+* `&&`
+* `%`
+* `!`
+##### !end-options
+##### !answer
+* `+`
+* `*`
+* `/`
+* `%`
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: checkbox
+* id: 6e9b4aa3-f3db-4e64-a686-3edc54a206ab
+* title: Logical operators
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+Which of the following are _logical_ operators in TypeScript? (Select all that apply)
+##### !end-question
+
+##### !options
+* `+`
+* `=`
+* `*`
+* `===`
+* `/`
+* `//`
+* `&&`
+* `%`
+* `!`
+##### !end-options
+##### !answer
+* `&&`
+* `!`
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: checkbox
+* id: fa62f16f-969b-4be5-8cef-e855ecdb175c
+* title: Comparison operators
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+Which of the following are _comparison_ operators in TypeScript? (Select all that apply) 
+##### !end-question
+##### !options
+* `+`
+* `=`
+* `*`
+* `===`
+* `/`
+* `//`
+* `&&`
+* `%`
+* `!`
+##### !end-options
+##### !answer
+ `===`
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+* type: multiple-choice
+* id: 5e918c07-91e2-4187-b5d7-e2bbd9da4115
+* title: Math
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+##### !question
+What will the following code write to the console?
+```typescript
+const foo = (22 + 4 * 2 - 2) / 4;
+console.log(foo)
+```
+##### !end-question
+##### !options
+* 0
+* 12.5
+* 7 
+* 11
+* 13
+##### !end-options
+##### !answer
+7
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: multiple-choice
+* id: 0a6bb3fd-d219-4cf8-b2cc-228ee497f17f
+* title: Logical operators
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+Which of the following expressions evaluates to true?
+##### !end-question
+##### !options
+*  true && false === false || true
+* 13 > 16 || 18 <= 13
+* “foo” !== “bar” && “baz” === “bam”
+* 3 + 4 + 2 * 5 >= 16 / 2 + 27 / 3 * (3 + 8 - 10)
+##### !end-options
+##### !answer
+3 + 4 + 2 * 5 >= 16 / 2 + 27 / 3 * (3 + 8 - 10)
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: multiple-choice
+* id: aa6a7612-1f40-46e6-8274-fcf09e98241e
+* title: Logical operators
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+Which of the following expressions evaluates to false? 
+##### !end-question
+##### !options
+* "typescript".charAt(4) === "strings".charAt(6)
+* "typescript".includes("JavaScript".substr(4, 9).toLowerCase())
+* typeof “typescript”.charCodeAt(3) === “string”
+* "type".concat('script').length === 10
+##### !end-options
+##### !answer
+typeof “typescript”.charCodeAt(3) === “string”
+##### !end-answer
+### !end-challenge
+
+<!--END CHALLENGE-->
+
+<!--BEGIN CHALLENGE-->
+
+### !challenge
+
+* type: multiple-choice
+* id: e77ebe7f-bc47-4080-82b1-90da7fda848c
+* title: Destructuring
+<!--Other optional fields (checkpoints only) -->
+<!--`points: 1`: the number of points for scoring as a checkpoint-->
+<!--`topics: python, pandas`: the topics for analyzing points-->
+
+##### !question
+What will the following code write to the console? 
+```typescript
+const myObj: any = {
+  myKey: 42,
+  mySecondKey: 'forty-two'
+}
+const { mySecondKey } = myObj;
+console.log(mySecondKey);
+```
+##### !end-question
+##### !options
+* {myKey: 42, mySecondKey: 'forty-two'}
+* ‘forty-two’
+* 42
+* undefined
+##### !end-options
+##### !answer
+‘forty-two’
 ##### !end-answer
 ### !end-challenge
 
